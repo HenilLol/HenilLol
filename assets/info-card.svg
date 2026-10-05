@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 310" width="820" height="310">
+  <defs>
+    <style><![CDATA[
+      .bg { fill: #0D1117; stroke: #30363D; stroke-width: 1; rx: 6px; ry: 6px; }
+      .card-surface { fill: #161B22; stroke: #21262D; stroke-width: 1; rx: 4px; ry: 4px; }
+      .header-title { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; fill: #8B949E; font-weight: 500; }
+      .header-prompt { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; fill: #00C7B7; font-weight: 600; }
+      .name { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 18px; fill: #E6EDF3; font-weight: 700; letter-spacing: 1px; }
+      .role { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 13px; fill: #00C7B7; font-weight: 500; }
+      .sec-label { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 11px; fill: #8B949E; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+      .sec-val { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 13px; fill: #E6EDF3; font-weight: 400; }
+      .dim { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 11px; fill: #484F58; }
+      /* FIX 1: Content defaults to opacity: 1 for animation-disabled fallback */
+      .reveal-line {
+        opacity: 1;
+        animation: lineFade 0.4s ease-out forwards;
+      }
+      @keyframes lineFade {
+        from { opacity: 0; transform: translateY(3px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal-line { animation: none !important; opacity: 1 !important; }
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect x="0.5" y="0.5" width="819" height="309" class="bg"/>
+
+  <!-- Header Bar -->
+  <g transform="translate(16, 24)">
+    <circle cx="0" cy="0" r="4.5" fill="#FF5F56" opacity="0.8"/>
+    <circle cx="14" cy="0" r="4.5" fill="#FFBD2E" opacity="0.8"/>
+    <circle cx="28" cy="0" r="4.5" fill="#27C93F" opacity="0.8"/>
+    <text x="44" y="4" class="header-prompt">henil@github:~$</text>
+    <text x="160" y="4" class="header-title">whoami --card</text>
+  </g>
+
+  <line x1="16" y1="36" x2="804" y2="36" stroke="#21262D" stroke-width="1"/>
+
+  <!-- Terminal Card Body -->
+  <g transform="translate(24, 52)">
+    <rect x="0" y="0" width="772" height="234" class="card-surface"/>
+  </g>
+
+  <!-- Content Group -->
+  <g transform="translate(44, 82)">
+    <!-- Name & Role -->
+    <g class="reveal-line" style="animation-delay: 0.05s;">
+      <text x="0" y="0" class="name">HENIL PATEL</text>
+      <text x="0" y="22" class="role">Computer Engineering Student</text>
+    </g>
+
+    <line x1="0" y1="36" x2="732" y2="36" stroke="#21262D" stroke-width="1" class="reveal-line" style="animation-delay: 0.1s;"/>
+    <g class="reveal-line" style="animation-delay: 0.15s;">
+      <text x="0" y="60" class="sec-label">Focus</text>
+      <text x="0" y="78" class="sec-val">Software · AI · GenAI · Agentic Systems</text>
+    </g>
+    <g class="reveal-line" style="animation-delay: 0.23s;">
+      <text x="0" y="102" class="sec-label">Building</text>
+      <text x="0" y="120" class="sec-val">HENEOXY (AI-powered Personal Computing Environment)</text>
+    </g>
+    <g class="reveal-line" style="animation-delay: 0.31s;">
+      <text x="0" y="144" class="sec-label">Learning</text>
+      <text x="0" y="162" class="sec-val">C · C++ · Web Development · Python</text>
+    </g>
+    <g class="reveal-line" style="animation-delay: 0.39s;">
+      <text x="0" y="186" class="sec-label">Selected work</text>
+      <text x="0" y="204" class="sec-val">COALINTEL · FluxDock · RecycLens · Portfolio</text>
+    </g>
+  </g>
+</svg>

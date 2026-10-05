@@ -1,0 +1,4 @@
+# Crazy GitHub Profile V1 - Python Dependencies
+# Standard Python 3.10+ standard library (urllib.request, re, json, pathlib, xml.etree)
+# is used for real public GitHub contribution data fetching and SVG art generation.
+# No external pip dependencies required.

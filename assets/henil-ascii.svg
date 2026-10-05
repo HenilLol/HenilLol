@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 230" width="820" height="230">
+  <defs>
+    <style><![CDATA[
+      .bg { fill: #0D1117; stroke: #30363D; stroke-width: 1; rx: 6px; ry: 6px; }
+      .card-surface { fill: #161B22; stroke: #21262D; stroke-width: 1; rx: 4px; ry: 4px; }
+      .header-title { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; fill: #8B949E; font-weight: 500; }
+      .header-prompt { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 12px; fill: #00C7B7; font-weight: 600; }
+      .ascii-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 11px; fill: #00C7B7; font-weight: 700; white-space: pre; }
+      .meta-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 11px; fill: #8B949E; }
+      .dim { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 11px; fill: #484F58; }
+      /* FIX 1: Content defaults to opacity: 1 for animation-disabled fallback */
+      .reveal-line {
+        opacity: 1;
+        animation: lineFade 0.3s ease-out forwards;
+      }
+      @keyframes lineFade {
+        from { opacity: 0; transform: translateY(2px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal-line { animation: none !important; opacity: 1 !important; }
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect x="0.5" y="0.5" width="819" height="229" class="bg"/>
+
+  <!-- Header Bar -->
+  <g transform="translate(16, 24)">
+    <circle cx="0" cy="0" r="4.5" fill="#FF5F56" opacity="0.8"/>
+    <circle cx="14" cy="0" r="4.5" fill="#FFBD2E" opacity="0.8"/>
+    <circle cx="28" cy="0" r="4.5" fill="#27C93F" opacity="0.8"/>
+    <text x="44" y="4" class="header-prompt">henil@github:~$</text>
+    <text x="160" y="4" class="header-title">cat ascii_identity.txt</text>
+  </g>
+
+  <line x1="16" y1="36" x2="804" y2="36" stroke="#21262D" stroke-width="1"/>
+
+  <!-- Card Surface -->
+  <g transform="translate(24, 50)">
+    <rect x="0" y="0" width="772" height="156" class="card-surface"/>
+  </g>
+
+  <!-- ASCII Content Container -->
+  <g transform="translate(44, 75)">
+    <g class="reveal-line" style="animation-delay: 0.08s;">
+      <text x="0" y="0" class="ascii-text" xml:space="preserve">  ██╗  ██╗███████╗███╗   ██╗██╗██╗     ██╗      ██████╗ ██╗     </text>
+    </g>
+    <g class="reveal-line" style="animation-delay: 0.13s;">
+      <text x="0" y="16" class="ascii-text" xml:space="preserve">  ██║  ██║██╔════╝████╗  ██║██║██║     ██║     ██╔═══██╗██║     </text>
+    </g>
+    <g class="reveal-line" style="animation-delay: 0.18s;">
+      <text x="0" y="32" class="ascii-text" xml:space="preserve">  ███████║█████╗  ██╔██╗ ██║██║██║     ██║     ██║   ██║██║     </text>
+    </g>
+    <g class="reveal-line" style="animation-delay: 0.23s;">
+      <text x="0" y="48" class="ascii-text" xml:space="preserve">  ██╔══██║██╔══╝  ██║╚██╗██║██║██║     ██║     ██║   ██║██║     </text>
+    </g>
+    <g class="reveal-line" style="animation-delay: 0.28s;">
+      <text x="0" y="64" class="ascii-text" xml:space="preserve">  ██║  ██║███████╗██║ ╚████║██║███████╗███████╗╚██████╔╝███████╗</text>
+    </g>
+    <g class="reveal-line" style="animation-delay: 0.33s;">
+      <text x="0" y="80" class="ascii-text" xml:space="preserve">  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝╚══════╝╚══════╝ ╚═════╝ ╚══════╝</text>
+    </g>
+    <g class="reveal-line" style="animation-delay: 0.48s;">
+      <text x="0" y="112" class="meta-text">id :: Henil Patel [HenilLol] | Computer Engineering Student | Software · AI</text>
+    </g>
+  </g>
+</svg>
