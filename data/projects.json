@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "2.0.0",
+  "updated_at": null,
+  "projects": [
+    {
+      "id": "heneoxy",
+      "name": "HENEOXY",
+      "category": "Major Project",
+      "description": "AI-powered Personal Computing Environment",
+      "repository": "HenilLol/HENEOXY",
+      "status": "ACTIVE BUILD",
+      "stack": ["Python", "C++", "Web"],
+      "featured": true,
+      "sort_order": 1
+    },
+    {
+      "id": "coalintel",
+      "name": "COALINTEL",
+      "category": "Selected Project",
+      "description": "Evidence-driven mining intelligence platform",
+      "repository": "HenilLol/COALINTEL",
+      "status": "MAINTAINED",
+      "stack": ["Python", "Web"],
+      "featured": true,
+      "sort_order": 2
+    },
+    {
+      "id": "fluxdock",
+      "name": "FLUXDOCK",
+      "category": "Selected Project",
+      "description": "Robotics / vision / control system",
+      "repository": "HenilLol/FLUXDOCK",
+      "status": "ACTIVE",
+      "stack": ["C++", "Python"],
+      "featured": true,
+      "sort_order": 3
+    },
+    {
+      "id": "recyclens",
+      "name": "RECYCLENS",
+      "category": "Selected Project",
+      "description": "Waste classification & recycler matching",
+      "repository": "HenilLol/RECYCLENS",
+      "status": "COMPLETED",
+      "stack": ["Python", "Web"],
+      "featured": true,
+      "sort_order": 4
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 310" width="820" height="310" role="img" aria-labelledby="project-title project-desc">
+  <title id="project-title">Henil Patel - Project Telemetry</title>
+  <desc id="project-desc">System telemetry and status log for featured software engineering projects and repositories.</desc>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .title-text { fill: #E6EDF3; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; }
+    .sub-text { fill: #8B949E; font-size: 11px; }
+    .accent-text { fill: #00C7B7; font-size: 11px; font-weight: 600; }
+    .dim-text { fill: #484F58; font-size: 10px; }
+    .proj-name { fill: #E6EDF3; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; }
+    .proj-desc { fill: #8B949E; font-size: 11px; }
+    .badge-verified { fill: #00C7B7; font-size: 10px; font-weight: 600; }
+    .badge-unverified { fill: #8B949E; font-size: 10px; font-weight: 600; }
+
+    /* Progressive reveal animation */
+    @keyframes projReveal {
+      0% { opacity: 0; transform: translateY(4px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .proj-row-1 { animation: projReveal 0.4s ease-out 0.1s 1 forwards; }
+    .proj-row-2 { animation: projReveal 0.4s ease-out 0.25s 1 forwards; }
+    .proj-row-3 { animation: projReveal 0.4s ease-out 0.4s 1 forwards; }
+    .proj-row-4 { animation: projReveal 0.4s ease-out 0.55s 1 forwards; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .proj-row-1, .proj-row-2, .proj-row-3, .proj-row-4 { animation: none !important; opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+
+  <!-- Outer Background &amp; Border -->
+  <rect x="0.5" y="0.5" width="819" height="309" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+  
+  <!-- Header Bar -->
+  <text x="24" y="28" class="mono title-text">PROJECT TELEMETRY</text>
+  <text x="180" y="28" class="mono dim-text">|</text>
+  <text x="195" y="28" class="mono sub-text">FEATURED REPOSITORIES / SYSTEM LOG</text>
+  <text x="796" y="28" class="mono accent-text" text-anchor="end">4 PROJECTS</text>
+  
+  <line x1="24" y1="36" x2="796" y2="36" stroke="#21262D" stroke-width="1" />
+
+  <!-- Project 01: HENEOXY -->
+  <g class="proj-row-1" transform="translate(24, 48)">
+    <rect x="0" y="0" width="772" height="56" rx="4" fill="#161B22" stroke="#21262D" stroke-width="1" />
+    <text x="16" y="24" class="mono proj-name">01 // HENEOXY</text>
+    <text x="16" y="42" class="mono proj-desc">AI-powered Personal Computing Environment</text>
+    
+    <!-- Stack Tags -->
+    <rect x="360" y="16" width="64" height="18" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="392.0" y="28" class="mono sub-text" text-anchor="middle">Python</text>
+    <rect x="430" y="16" width="45" height="18" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="452.5" y="28" class="mono sub-text" text-anchor="middle">C++</text>
+    <rect x="481" y="16" width="45" height="18" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="503.5" y="28" class="mono sub-text" text-anchor="middle">Web</text>
+
+    <!-- Status Badge -->
+    <rect x="580" y="16" width="95" height="20" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="627.5" y="30" class="mono badge-unverified" text-anchor="middle">ACTIVE BUILD</text>
+
+    <!-- Verification / Repo Link -->
+    <text x="756" y="30" class="mono sub-text" text-anchor="end">[ UNVERIFIED ]</text>
+  </g>
+
+  <!-- Project 02: COALINTEL -->
+  <g class="proj-row-2" transform="translate(24, 112)">
+    <rect x="0" y="0" width="772" height="56" rx="4" fill="#161B22" stroke="#21262D" stroke-width="1" />
+    <text x="16" y="24" class="mono proj-name">02 // COALINTEL</text>
+    <text x="16" y="42" class="mono proj-desc">Evidence-driven mining intelligence platform</text>
+    
+    <!-- Stack Tags -->
+    <rect x="360" y="16" width="64" height="18" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="392.0" y="28" class="mono sub-text" text-anchor="middle">Python</text>
+    <rect x="430" y="16" width="45" height="18" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="452.5" y="28" class="mono sub-text" text-anchor="middle">Web</text>
+
+    <!-- Status Badge -->
+    <rect x="580" y="16" width="95" height="20" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="627.5" y="30" class="mono badge-unverified" text-anchor="middle">MAINTAINED</text>
+
+    <!-- Verification / Repo Link -->
+    <a href="https://github.com/HenilLol/coalintel" target="_blank" rel="noopener noreferrer">
+      <rect x="686" y="16" width="76" height="20" rx="3" fill="#04383F" stroke="#00C7B7" stroke-width="1" />
+      <text x="724" y="30" class="mono badge-verified" text-anchor="middle">VERIFIED ↗</text>
+    </a>
+  </g>
+
+  <!-- Project 03: FLUXDOCK -->
+  <g class="proj-row-3" transform="translate(24, 176)">
+    <rect x="0" y="0" width="772" height="56" rx="4" fill="#161B22" stroke="#21262D" stroke-width="1" />
+    <text x="16" y="24" class="mono proj-name">03 // FLUXDOCK</text>
+    <text x="16" y="42" class="mono proj-desc">Robotics / vision / control system</text>
+    
+    <!-- Stack Tags -->
+    <rect x="360" y="16" width="45" height="18" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="382.5" y="28" class="mono sub-text" text-anchor="middle">C++</text>
+    <rect x="411" y="16" width="64" height="18" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="443.0" y="28" class="mono sub-text" text-anchor="middle">Python</text>
+
+    <!-- Status Badge -->
+    <rect x="580" y="16" width="95" height="20" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="627.5" y="30" class="mono badge-unverified" text-anchor="middle">ACTIVE</text>
+
+    <!-- Verification / Repo Link -->
+    <text x="756" y="30" class="mono sub-text" text-anchor="end">[ UNVERIFIED ]</text>
+  </g>
+
+  <!-- Project 04: RECYCLENS -->
+  <g class="proj-row-4" transform="translate(24, 240)">
+    <rect x="0" y="0" width="772" height="56" rx="4" fill="#161B22" stroke="#21262D" stroke-width="1" />
+    <text x="16" y="24" class="mono proj-name">04 // RECYCLENS</text>
+    <text x="16" y="42" class="mono proj-desc">Waste classification &amp; recycler matching</text>
+    
+    <!-- Stack Tags -->
+    <rect x="360" y="16" width="64" height="18" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="392.0" y="28" class="mono sub-text" text-anchor="middle">Python</text>
+    <rect x="430" y="16" width="45" height="18" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="452.5" y="28" class="mono sub-text" text-anchor="middle">Web</text>
+
+    <!-- Status Badge -->
+    <rect x="580" y="16" width="95" height="20" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+    <text x="627.5" y="30" class="mono badge-unverified" text-anchor="middle">COMPLETED</text>
+
+    <!-- Verification / Repo Link -->
+    <a href="https://github.com/HenilLol/Recyclens" target="_blank" rel="noopener noreferrer">
+      <rect x="686" y="16" width="76" height="20" rx="3" fill="#04383F" stroke="#00C7B7" stroke-width="1" />
+      <text x="724" y="30" class="mono badge-verified" text-anchor="middle">VERIFIED ↗</text>
+    </a>
+  </g>
+</svg>

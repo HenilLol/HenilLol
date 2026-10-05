@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 290" width="820" height="290" role="img" aria-labelledby="telemetry-title telemetry-desc">
+  <title id="telemetry-title">Henil Patel - Telemetry OS Terminal</title>
+  <desc id="telemetry-desc">Engineering profile hero telemetry status for Henil Patel, showing system identity, pipeline state, and live GitHub verification status.</desc>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .title-text { fill: #E6EDF3; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; }
+    .sub-text { fill: #8B949E; font-size: 11px; }
+    .accent-text { fill: #00C7B7; font-size: 12px; font-weight: 600; }
+    .dim-text { fill: #484F58; font-size: 11px; }
+    .value-text { fill: #E6EDF3; font-size: 12px; font-weight: 500; }
+    .label-text { fill: #8B949E; font-size: 12px; font-weight: 600; letter-spacing: 0.5px; }
+    
+    /* Progressive enhancement finite reveal animation */
+    @keyframes bootSeq {
+      0% { opacity: 0; transform: translateY(3px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .anim-step-1 { animation: bootSeq 0.4s ease-out 0.1s 1 forwards; }
+    .anim-step-2 { animation: bootSeq 0.4s ease-out 0.3s 1 forwards; }
+    .anim-step-3 { animation: bootSeq 0.4s ease-out 0.5s 1 forwards; }
+    .anim-step-4 { animation: bootSeq 0.4s ease-out 0.7s 1 forwards; }
+    
+    @media (prefers-reduced-motion: reduce) {
+      .anim-step-1, .anim-step-2, .anim-step-3, .anim-step-4 { animation: none !important; opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+
+  <!-- Outer Window Background &amp; Border -->
+  <rect x="0.5" y="0.5" width="819" height="289" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+  
+  <!-- Terminal Window Header Bar -->
+  <path d="M 0.5,6 A 5.5,5.5 0 0,1 6,0.5 L 814,0.5 A 5.5,5.5 0 0,1 819.5,6 L 819.5,36 L 0.5,36 Z" fill="#161B22" />
+  <line x1="0.5" y1="36.5" x2="819.5" y2="36.5" stroke="#30363D" stroke-width="1" />
+  
+  <!-- Window Control Buttons -->
+  <circle cx="20" cy="18.5" r="5" fill="#FF5F56" />
+  <circle cx="36" cy="18.5" r="5" fill="#FFBD2E" />
+  <circle cx="52" cy="18.5" r="5" fill="#27C93F" />
+  
+  <!-- Header Title -->
+  <text x="70" y="22.5" class="mono title-text">HENILLOL / TELEMETRY-OS</text>
+  <rect x="255" y="10" width="60" height="17" rx="3" fill="#12171F" stroke="#30363D" stroke-width="1" />
+  <text x="285" y="22" class="mono accent-text" font-size="10" text-anchor="middle">[ LIVE ]</text>
+  
+  <!-- Main Terminal Content Area -->
+  <g class="anim-step-1">
+    <text x="24" y="62" class="mono accent-text">&gt; system_boot.sh</text>
+    <line x1="24" y1="72" x2="796" y2="72" stroke="#21262D" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Two Column Telemetry Section -->
+  <g class="anim-step-2">
+    <!-- Left Column: Identity &amp; Environment -->
+    <text x="24" y="98" class="mono label-text">IDENTITY</text>
+    <text x="140" y="98" class="mono value-text">HENIL PATEL</text>
+    
+    <text x="24" y="126" class="mono label-text">ROLE</text>
+    <text x="140" y="126" class="mono value-text">COMPUTER ENGINEERING</text>
+    
+    <text x="24" y="154" class="mono label-text">FOCUS</text>
+    <text x="140" y="154" class="mono value-text">SYSTEMS / AI / ROBOTICS</text>
+    
+    <text x="24" y="182" class="mono label-text">ENVIRONMENT</text>
+    <text x="140" y="182" class="mono value-text">GITHUB / PUBLIC</text>
+  </g>
+
+  <g class="anim-step-3">
+    <!-- Center Separator Line -->
+    <line x1="410" y1="85" x2="410" y2="215" stroke="#30363D" stroke-width="1" stroke-dasharray="2 2" />
+
+    <!-- Right Column: Pipeline &amp; Data Status -->
+    <text x="434" y="98" class="mono label-text">PIPELINE</text>
+    <rect x="540" y="85" width="86" height="18" rx="3" fill="#04383F" stroke="#00C7B7" stroke-width="1" />
+    <text x="583" y="98" class="mono accent-text" font-size="10" text-anchor="middle">HEALTHY</text>
+
+    <text x="434" y="126" class="mono label-text">DATA</text>
+    <rect x="540" y="113" width="86" height="18" rx="3" fill="#04383F" stroke="#00C7B7" stroke-width="1" />
+    <text x="583" y="126" class="mono accent-text" font-size="10" text-anchor="middle">VERIFIED</text>
+
+    <text x="434" y="154" class="mono label-text">SOURCE</text>
+    <text x="540" y="154" class="mono value-text">GitHub REST API v3</text>
+
+    <text x="434" y="182" class="mono label-text">LAST SYNC</text>
+    <text x="540" y="182" class="mono value-text">2026-10-05 06:19 UTC</text>
+  </g>
+
+  <!-- Terminal Footer Status -->
+  <g class="anim-step-4">
+    <line x1="24" y1="228" x2="796" y2="228" stroke="#21262D" stroke-width="1" />
+    <text x="24" y="256" class="mono accent-text">&gt; SYSTEM READY</text>
+    <rect x="145" y="244" width="8" height="14" fill="#00C7B7" opacity="0.85" />
+    <text x="796" y="256" class="mono dim-text" text-anchor="end">STATUS: OK (0 ERRORS)</text>
+  </g>
+</svg>

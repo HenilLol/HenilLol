@@ -42,3 +42,6 @@ Thumbs.db
 *.log
 scratch/
 tmp/
+
+# V2 Staging
+staging/*.svg

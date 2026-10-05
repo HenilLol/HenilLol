@@ -1,61 +1,38 @@
-```bash
-henil@github:~$ ./contributions.sh
-```
+<p align="center">
+  <img
+    src="assets/telemetry-os.svg"
+    alt="Henil Patel — Telemetry OS"
+    width="820"
+  />
+</p>
 
-<div align="center">
-  <img src="assets/contrib-heatmap.svg" alt="Henil Patel's GitHub Contribution Heatmap - Editorial Grid" width="100%">
-</div>
+<p align="center">
+  <img
+    src="assets/chrono-matrix.svg"
+    alt="GitHub contribution activity — 365 day Chrono-Matrix"
+    width="820"
+  />
+</p>
 
-<br>
+<p align="center">
+  <img
+    src="assets/project-telemetry.svg"
+    alt="Project telemetry — HENEOXY, COALINTEL, FLUXDOCK, RECYCLENS"
+    width="820"
+  />
+</p>
 
-```bash
-henil@github:~$ whoami
-```
-
-<div align="center">
-  <img src="assets/info-card.svg" alt="Henil Patel - Computer Engineering Student Info Card" width="100%">
-</div>
-
-<br>
-
-```bash
-henil@github:~$ cat ascii_identity.txt
-```
-
-<div align="center">
-  <img src="assets/henil-ascii.svg" alt="Henil Patel - Terminal ASCII Identity Graphic" width="100%">
-</div>
-
-<br>
-
-```bash
-henil@github:~$ ls projects -l
-```
-
-```
-01  HENEOXY  [ Major Project ]
-    AI-powered Personal Computing Environment
-
-02  COALINTEL
-    Evidence-driven mining intelligence platform
-
-03  FLUXDOCK
-    Robotics / vision / control system
-
-04  RECYCLENS
-    Waste classification & recycler matching
-
-05  PORTFOLIO
-    Personal engineering portfolio & showcase
-```
+<p align="center">
+  <a href="https://github.com/HenilLol/coalintel">COALINTEL</a>
+  ·
+  <a href="https://github.com/HenilLol/Recyclens">RECYCLENS</a>
+</p>
 
 <br>
 
-```bash
-henil@github:~$ cat currently.txt
-```
+## CURRENT STATE
 
-```
+```text
 [role]        Computer Engineering Student
 [building]    HENEOXY
 [learning]    C · C++ · Web Development · Python
@@ -64,9 +41,7 @@ henil@github:~$ cat currently.txt
 
 <br>
 
-```bash
-henil@github:~$ ./connect.sh
-```
+## CONNECT
 
 | Terminal Link | Destination |
 | :--- | :--- |
