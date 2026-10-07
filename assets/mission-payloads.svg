@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" width="820" height="400" role="img" aria-labelledby="payload-title payload-desc">
+  <title id="payload-title">Henil Patel - Mission Payloads Subsystem Registry</title>
+  <desc id="payload-desc">Subsystem architecture flight deck for Henil Patel's four engineering projects: Heneoxy, CoalIntel, FluxDock, and RecycLens with verified repository telemetry.</desc>
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="payload-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04070D" />
+      <stop offset="50%" stop-color="#060C16" />
+      <stop offset="100%" stop-color="#091322" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="card-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1322" />
+      <stop offset="100%" stop-color="#0D1A2D" />
+    </linearGradient>
+
+    <!-- Glowing Beacon Filter -->
+    <filter id="beacon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .title-primary { fill: #F0F6FC; font-size: 13px; font-weight: 800; letter-spacing: 1.5px; }
+    .title-sub { fill: #8B9BB4; font-size: 10.5px; }
+    .mod-title { fill: #F0F6FC; font-size: 13px; font-weight: 800; letter-spacing: 1px; }
+    .val-cyan { fill: #00F0FF; font-size: 11px; font-weight: 700; }
+    .val-amber { fill: #FFB000; font-size: 11px; font-weight: 700; }
+    .val-emerald { fill: #00E599; font-size: 11px; font-weight: 700; }
+    .label-muted { fill: #8B9BB4; font-size: 9.5px; font-weight: 600; }
+    .desc-text { fill: #8B9BB4; font-size: 10px; line-height: 1.4; }
+    .micro-dim { fill: #6E86AA; font-size: 9px; }
+
+    /* Pulsing Beacons */
+    @keyframes pulseBeacon {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .anim-beacon { animation: pulseBeacon 2s ease-in-out infinite; }
+
+    /* Prefers Reduced Motion Safety */
+    @media (prefers-reduced-motion: reduce) {
+      .anim-beacon { animation: none !important; opacity: 1 !important; }
+    }
+  </style>
+
+  <!-- Outer Frame -->
+  <rect x="0.5" y="0.5" width="819" height="399" rx="8" fill="url(#payload-bg-grad)" stroke="#1E2D44" stroke-width="1" />
+
+  <!-- Header Bar -->
+  <rect x="1" y="1" width="818" height="36" rx="7" fill="#0A1220" />
+  <line x1="1" y1="37" x2="819" y2="37" stroke="#1E2D44" stroke-width="1" />
+
+  <text x="20" y="23" class="mono title-primary">SUBSYSTEM ARCHITECTURE</text>
+  <text x="245" y="23" class="mono title-sub">// PRIMARY MISSION PAYLOADS REGISTRY</text>
+  <text x="635" y="23" class="mono val-cyan" font-size="10.5">4 NODES REGISTERED</text>
+
+  <!-- ======================================================================== -->
+  <!-- 2 × 2 SUBSYSTEM MODULE MATRIX                                            -->
+  <!-- ======================================================================== -->
+  <!-- MOD-01: HENEOXY (x=16, y=48, w=388, h=160) -->
+  <g id="mod-heneoxy">
+    <rect x="16" y="48" width="388" height="160" rx="6" fill="url(#card-bg-grad)" stroke="#FFB000" stroke-width="1.2" />
+    <rect x="16" y="48" width="388" height="24" rx="6" fill="#141E15" />
+    <line x1="16" y1="72" x2="404" y2="72" stroke="#1E2D44" stroke-width="1" />
+
+    <!-- Top Bar -->
+    <text x="26" y="64" class="mono val-amber" font-size="10.5">MOD-01 // FLAGSHIP</text>
+    <rect x="274" y="52" width="120" height="16" rx="8" fill="#2E1C00" stroke="#FFB000" stroke-width="0.8" />
+    <circle cx="284" cy="60" r="3" fill="#FFB000" class="anim-beacon" />
+    <text x="292" y="63" class="mono val-amber" font-size="9">ACTIVE BUILD</text>
+
+    <!-- Title & Class -->
+    <text x="26" y="93" class="mono mod-title">HENEOXY</text>
+    <text x="116" y="93" class="mono micro-dim">[FLAGSHIP]</text>
+
+    <!-- Dynamic Description Lines -->
+    <text x="26" y="110" class="mono desc-text">AI-powered Personal Computing Environment</text>
+    <text x="26" y="123" class="mono desc-text"></text>
+
+    <!-- Stack Pills -->
+    <g transform="translate(26, 134)">
+      <rect x="0" y="0" width="62" height="15" rx="3" fill="#0A1826" stroke="#1E3554" stroke-width="0.8" />
+      <text x="7" y="11" class="mono val-cyan" font-size="9">Python</text>
+      <rect x="68" y="0" width="38" height="15" rx="3" fill="#0A1826" stroke="#1E3554" stroke-width="0.8" />
+      <text x="75" y="11" class="mono val-cyan" font-size="9">C++</text>
+      <rect x="112" y="0" width="38" height="15" rx="3" fill="#0A1826" stroke="#1E3554" stroke-width="0.8" />
+      <text x="119" y="11" class="mono val-cyan" font-size="9">Web</text>
+    </g>
+
+    <!-- Subsystem Flow Architecture -->
+    <text x="26" y="167" class="mono micro-dim">BUS:</text>
+    <text x="56" y="167" class="mono val-titanium" font-size="9">PROMPT → AGENT GRAPH → LOCAL BUS</text>
+
+    <!-- Hardware Status Footer -->
+    <line x1="26" y1="178" x2="394" y2="178" stroke="#16253B" stroke-width="0.8" />
+    <text x="26" y="193" class="mono micro-dim" font-size="9">STATUS: CORE FIRMWARE ACTIVE · LOCAL DEV</text>
+  </g>
+
+  <!-- MOD-02: COALINTEL (x=416, y=48, w=388, h=160) -->
+  <g id="mod-coalintel">
+    <rect x="416" y="48" width="388" height="160" rx="6" fill="url(#card-bg-grad)" stroke="#00E599" stroke-width="1.2" />
+    <rect x="416" y="48" width="388" height="24" rx="6" fill="#0A1F18" />
+    <line x1="416" y1="72" x2="804" y2="72" stroke="#1E2D44" stroke-width="1" />
+
+    <!-- Top Bar -->
+    <text x="426" y="64" class="mono val-emerald" font-size="10.5">MOD-02 // INTELLIGENCE</text>
+    <rect x="674" y="52" width="120" height="16" rx="8" fill="#072216" stroke="#00E599" stroke-width="0.8" />
+    <circle cx="684" cy="60" r="3" fill="#00E599" class="anim-beacon" />
+    <text x="692" y="63" class="mono val-emerald" font-size="9">VERIFIED REPO</text>
+
+    <!-- Title & Class -->
+    <text x="426" y="93" class="mono mod-title">COALINTEL</text>
+    <text x="516" y="93" class="mono micro-dim">[INTELLIGENCE]</text>
+
+    <!-- Dynamic Description Lines -->
+    <text x="426" y="110" class="mono desc-text">Evidence-driven mining intelligence platform</text>
+    <text x="426" y="123" class="mono desc-text"></text>
+
+    <!-- Stack Pills -->
+    <g transform="translate(426, 134)">
+      <rect x="0" y="0" width="62" height="15" rx="3" fill="#0A1826" stroke="#1E3554" stroke-width="0.8" />
+      <text x="7" y="11" class="mono val-cyan" font-size="9">Python</text>
+      <rect x="68" y="0" width="38" height="15" rx="3" fill="#0A1826" stroke="#1E3554" stroke-width="0.8" />
+      <text x="75" y="11" class="mono val-cyan" font-size="9">Web</text>
+    </g>
+
+    <!-- Subsystem Flow Architecture -->
+    <text x="426" y="167" class="mono micro-dim">BUS:</text>
+    <text x="456" y="167" class="mono val-titanium" font-size="9">SATELLITE DATA → ETL PIPELINE → PREDICTIONS</text>
+
+    <!-- Hardware Status Footer -->
+    <line x1="426" y1="178" x2="794" y2="178" stroke="#16253B" stroke-width="0.8" />
+    <text x="426" y="193" class="mono val-emerald" font-size="9">TARGET: github.com/HenilLol/COALINTEL (LIVE)</text>
+  </g>
+
+  <!-- MOD-03: FLUXDOCK (x=16, y=218, w=388, h=160) -->
+  <g id="mod-fluxdock">
+    <rect x="16" y="218" width="388" height="160" rx="6" fill="url(#card-bg-grad)" stroke="#1E2D44" stroke-width="1.2" />
+    <rect x="16" y="218" width="388" height="24" rx="6" fill="#0A1424" />
+    <line x1="16" y1="242" x2="404" y2="242" stroke="#1E2D44" stroke-width="1" />
+
+    <!-- Top Bar -->
+    <text x="26" y="234" class="mono val-cyan" font-size="10.5">MOD-03 // SYSTEMS</text>
+    <rect x="274" y="222" width="120" height="16" rx="8" fill="#09182A" stroke="#00F0FF" stroke-width="0.8" />
+    <circle cx="284" cy="230" r="3" fill="#00F0FF" class="anim-beacon" />
+    <text x="292" y="233" class="mono val-cyan" font-size="9">ACTIVE</text>
+
+    <!-- Title & Class -->
+    <text x="26" y="263" class="mono mod-title">FLUXDOCK</text>
+    <text x="116" y="263" class="mono micro-dim">[SYSTEMS]</text>
+
+    <!-- Dynamic Description Lines -->
+    <text x="26" y="280" class="mono desc-text">Robotics / vision / control system</text>
+    <text x="26" y="293" class="mono desc-text"></text>
+
+    <!-- Stack Pills -->
+    <g transform="translate(26, 304)">
+      <rect x="0" y="0" width="38" height="15" rx="3" fill="#0A1826" stroke="#1E3554" stroke-width="0.8" />
+      <text x="7" y="11" class="mono val-cyan" font-size="9">C++</text>
+      <rect x="44" y="0" width="62" height="15" rx="3" fill="#0A1826" stroke="#1E3554" stroke-width="0.8" />
+      <text x="51" y="11" class="mono val-cyan" font-size="9">Python</text>
+    </g>
+
+    <!-- Subsystem Flow Architecture -->
+    <text x="26" y="337" class="mono micro-dim">BUS:</text>
+    <text x="56" y="337" class="mono val-titanium" font-size="9">CAMERA INPUT → OPENCV → MOTOR PWM LOOPS</text>
+
+    <!-- Hardware Status Footer -->
+    <line x1="26" y1="348" x2="394" y2="348" stroke="#16253B" stroke-width="0.8" />
+    <text x="26" y="363" class="mono micro-dim" font-size="9">STATUS: HARDWARE TESTBENCH // ACTIVE R&amp;D</text>
+  </g>
+
+  <!-- MOD-04: RECYCLENS (x=416, y=218, w=388, h=160) -->
+  <g id="mod-recyclens">
+    <rect x="416" y="218" width="388" height="160" rx="6" fill="url(#card-bg-grad)" stroke="#00E599" stroke-width="1.2" />
+    <rect x="416" y="218" width="388" height="24" rx="6" fill="#0A1F18" />
+    <line x1="416" y1="242" x2="804" y2="242" stroke="#1E2D44" stroke-width="1" />
+
+    <!-- Top Bar -->
+    <text x="426" y="234" class="mono val-emerald" font-size="10.5">MOD-04 // NEURAL MODEL</text>
+    <rect x="674" y="222" width="120" height="16" rx="8" fill="#072216" stroke="#00E599" stroke-width="0.8" />
+    <circle cx="684" cy="230" r="3" fill="#00E599" class="anim-beacon" />
+    <text x="692" y="233" class="mono val-emerald" font-size="9">VERIFIED REPO</text>
+
+    <!-- Title & Class -->
+    <text x="426" y="263" class="mono mod-title">RECYCLENS</text>
+    <text x="516" y="263" class="mono micro-dim">[NEURAL MODEL]</text>
+
+    <!-- Dynamic Description Lines -->
+    <text x="426" y="280" class="mono desc-text">Waste classification &amp; recycler matching</text>
+    <text x="426" y="293" class="mono desc-text"></text>
+
+    <!-- Stack Pills -->
+    <g transform="translate(426, 304)">
+      <rect x="0" y="0" width="62" height="15" rx="3" fill="#0A1826" stroke="#1E3554" stroke-width="0.8" />
+      <text x="7" y="11" class="mono val-cyan" font-size="9">Python</text>
+      <rect x="68" y="0" width="38" height="15" rx="3" fill="#0A1826" stroke="#1E3554" stroke-width="0.8" />
+      <text x="75" y="11" class="mono val-cyan" font-size="9">Web</text>
+    </g>
+
+    <!-- Subsystem Flow Architecture -->
+    <text x="426" y="337" class="mono micro-dim">BUS:</text>
+    <text x="456" y="337" class="mono val-titanium" font-size="9">IMAGE TENSOR → RESNET INFERENCE → DISPATCH</text>
+
+    <!-- Hardware Status Footer -->
+    <line x1="426" y1="348" x2="794" y2="348" stroke="#16253B" stroke-width="0.8" />
+    <text x="426" y="363" class="mono val-emerald" font-size="9">TARGET: github.com/HenilLol/RECYCLENS (LIVE)</text>
+  </g>
+
+  <!-- ======================================================================== -->
+  <!-- INTER-MODULE BUS TRACE LINE                                              -->
+  <!-- ======================================================================== -->
+  <line x1="20" y1="388" x2="800" y2="388" stroke="#16253B" stroke-width="1" />
+  <circle cx="210" cy="388" r="2" fill="#00F0FF" />
+  <circle cx="610" cy="388" r="2" fill="#00E599" />
+  <text x="220" y="392" class="mono micro-dim">PAYLOAD_BUS: ALL SUBSYSTEMS MAPPED TO KERNEL V3 ARCHITECTURE</text>
+</svg>
