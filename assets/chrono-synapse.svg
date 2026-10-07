@@ -70,19 +70,19 @@
   <!-- Left: System Designation -->
   <text x="18" y="22" class="mono title-primary">CHRONO-SYNAPSE</text>
   <text x="145" y="22" class="mono title-sub">// 365-DAY TEMPORAL MEMORY BUS</text>
-  <text x="18" y="38" class="mono micro-dim">BUS RANGE: 2025-10-07 → 2026-10-06 (53 COLUMNS × 7 TRACKS)</text>
+  <text x="18" y="38" class="mono micro-dim">BUS RANGE: 2025-10-08 → 2026-10-07 (53 COLUMNS × 7 TRACKS)</text>
 
   <!-- Center: Seismic Activity Waveform -->
   <g id="seismic-waveform">
     <!-- Waveform Baseline -->
     <line x1="280" y1="32" x2="560" y2="32" stroke="#16253B" stroke-width="1" />
     <!-- Dynamic Waveform Path -->
-    <path d="M 280.0,32.0 L 285.4,32.0 L 290.8,32.0 L 296.2,32.0 L 301.5,32.0 L 306.9,32.0 L 312.3,32.0 L 317.7,32.0 L 323.1,32.0 L 328.5,31.6 L 333.8,32.0 L 339.2,32.0 L 344.6,32.0 L 350.0,32.0 L 355.4,32.0 L 360.8,32.0 L 366.2,32.0 L 371.5,32.0 L 376.9,32.0 L 382.3,32.0 L 387.7,32.0 L 393.1,32.0 L 398.5,32.0 L 403.8,32.0 L 409.2,32.0 L 414.6,31.8 L 420.0,32.0 L 425.4,32.0 L 430.8,32.0 L 436.2,32.0 L 441.5,32.0 L 446.9,32.0 L 452.3,32.0 L 457.7,32.0 L 463.1,32.0 L 468.5,32.0 L 473.8,32.0 L 479.2,31.4 L 484.6,32.0 L 490.0,32.0 L 495.4,32.0 L 500.8,25.8 L 506.2,32.0 L 511.5,32.0 L 516.9,32.0 L 522.3,32.0 L 527.7,29.2 L 533.1,18.2 L 538.5,16.0 L 543.8,24.4 L 549.2,29.8 L 554.6,20.8 L 560.0,31.0" fill="none" stroke="#00F0FF" stroke-width="1.4" opacity="0.85" />
+    <path d="M 280.0,32.0 L 285.4,32.0 L 290.8,32.0 L 296.2,32.0 L 301.5,32.0 L 306.9,32.0 L 312.3,32.0 L 317.7,32.0 L 323.1,32.0 L 328.5,31.6 L 333.8,32.0 L 339.2,32.0 L 344.6,32.0 L 350.0,32.0 L 355.4,32.0 L 360.8,32.0 L 366.2,32.0 L 371.5,32.0 L 376.9,32.0 L 382.3,32.0 L 387.7,32.0 L 393.1,32.0 L 398.5,32.0 L 403.8,32.0 L 409.2,32.0 L 414.6,31.8 L 420.0,32.0 L 425.4,32.0 L 430.8,32.0 L 436.2,32.0 L 441.5,32.0 L 446.9,32.0 L 452.3,32.0 L 457.7,32.0 L 463.1,32.0 L 468.5,32.0 L 473.8,32.0 L 479.2,31.4 L 484.6,32.0 L 490.0,32.0 L 495.4,32.0 L 500.8,25.8 L 506.2,32.0 L 511.5,32.0 L 516.9,32.0 L 522.3,32.0 L 527.7,29.2 L 533.1,18.2 L 538.5,16.0 L 543.8,24.4 L 549.2,29.8 L 554.6,20.8 L 560.0,30.8" fill="none" stroke="#00F0FF" stroke-width="1.4" opacity="0.85" />
     <text x="290" y="14" class="mono micro-dim">ANNUAL ACTIVITY SEISMIC WAVE</text>
   </g>
 
   <!-- Right: Total Synaptic Events & Verification -->
-  <text x="590" y="22" class="mono val-cyan">310 SYNAPTIC PULSES</text>
+  <text x="590" y="22" class="mono val-cyan">311 SYNAPTIC PULSES</text>
   <text x="590" y="38" class="mono val-emerald">CANONICAL: 365/365 DATES</text>
 
   <!-- ======================================================================== -->
@@ -114,7 +114,7 @@
   <!-- Matrix Cells -->
   <g id="synapse-cells">
     <rect x="54.0" y="75.0" width="10.8" height="10.8" rx="2" fill="#0A111C" opacity="0.3" stroke="#121D2D" stroke-width="0.5" />
-    <rect x="54.0" y="90.0" width="10.8" height="10.8" rx="2" fill="#0E1726" stroke="#16253B" stroke-width="0.8" ><title>2025-10-07: 0 contributions</title></rect>
+    <rect x="54.0" y="90.0" width="10.8" height="10.8" rx="2" fill="#0A111C" opacity="0.3" stroke="#121D2D" stroke-width="0.5" />
     <rect x="54.0" y="105.0" width="10.8" height="10.8" rx="2" fill="#0E1726" stroke="#16253B" stroke-width="0.8" ><title>2025-10-08: 0 contributions</title></rect>
     <rect x="54.0" y="120.0" width="10.8" height="10.8" rx="2" fill="#0E1726" stroke="#16253B" stroke-width="0.8" ><title>2025-10-09: 0 contributions</title></rect>
     <rect x="54.0" y="135.0" width="10.8" height="10.8" rx="2" fill="#0E1726" stroke="#16253B" stroke-width="0.8" ><title>2025-10-10: 0 contributions</title></rect>
@@ -479,7 +479,7 @@
     <rect x="762.9" y="165.0" width="10.8" height="10.8" rx="2" fill="#004D66" stroke="#007799" stroke-width="0.8" ><title>2026-10-04: 1 contributions</title></rect>
     <rect x="776.8" y="75.0" width="10.8" height="10.8" rx="2" fill="#004D66" stroke="#007799" stroke-width="0.8" ><title>2026-10-05: 5 contributions</title></rect>
     <rect x="776.8" y="90.0" width="10.8" height="10.8" rx="2" fill="#0E1726" stroke="#16253B" stroke-width="0.8" ><title>2026-10-06: 0 contributions</title></rect>
-    <rect x="776.8" y="105.0" width="10.8" height="10.8" rx="2" fill="#0A111C" opacity="0.3" stroke="#121D2D" stroke-width="0.5" />
+    <rect x="776.8" y="105.0" width="10.8" height="10.8" rx="2" fill="#004D66" stroke="#007799" stroke-width="0.8" ><title>2026-10-07: 1 contributions</title></rect>
     <rect x="776.8" y="120.0" width="10.8" height="10.8" rx="2" fill="#0A111C" opacity="0.3" stroke="#121D2D" stroke-width="0.5" />
     <rect x="776.8" y="135.0" width="10.8" height="10.8" rx="2" fill="#0A111C" opacity="0.3" stroke="#121D2D" stroke-width="0.5" />
     <rect x="776.8" y="150.0" width="10.8" height="10.8" rx="2" fill="#0A111C" opacity="0.3" stroke="#121D2D" stroke-width="0.5" />
